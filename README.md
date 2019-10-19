@@ -34,12 +34,12 @@
 #### API・データ
 今回スポンサーから提供されたAPI、製品などの外部技術があれば記述をして下さい。
 
-* 
+* Messaging API (LINE develop)
 * 
 * 
 
 #### フレームワーク・ライブラリ・モジュール
-* Messaging API (LINE develop)
+* 
 * 
 
 #### デバイス

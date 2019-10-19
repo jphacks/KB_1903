@@ -1,4 +1,4 @@
-# サンプル（プロダクト名）
+# FMT (First meeting topic)
 
 [![Product Name](image.png)](https://www.youtube.com/watch?v=G5rULR53uMk)
 

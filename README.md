@@ -1,15 +1,14 @@
 # F.M.T (First Meeting Topic)
 
-
-
-[![Product Name](image.png)](https://www.youtube.com/watch?v=G5rULR53uMk)
+<p align="center">
+<img src="https://github.com/carlos-paniagua/KB_1903/blob/master/FMT%E3%83%AD%E3%82%B4.png" alt="ロゴ" width="1000">
+</p>
 
 ---
 
 ### 製品概要
 ## __communication X Tech__
 
----
 ### 背景
 * 授業等で初対面の人たちとチームを組む際に話のネタが思いつかない...
 * 一部の人しか盛り上がらない話より、チーム全体で盛り上がる話がわからない...
@@ -20,9 +19,15 @@
 ### 製品説明
 話のネタが思いつかない？グループトークが盛りが上がらない？
 それなら __F.M.T(First Meeting Topic)__ をお使いください!
-LINEBOTがグループの趣味を自動的に分析し、最適な話のネタを __提供__ してくれます!
-さらに、趣味が記載した __電子名刺__ を自動作成!
-__F.M.Tで最高のLINEトーク&名刺交換を楽しみましょう!__
+LINEBotがグループの趣味を自動的に分析し、最適な話のネタを __提供__ してくれます!
+さらに、自分の趣味が記載された __電子名刺__ を自動作成!
+__F.M.Tで最高のLINEトーク&名刺交換を楽しみましょう!__　　
+
+<p align="center">
+<img src="https://github.com/carlos-paniagua/KB_1903/blob/master/%E8%A7%A3%E8%AA%AC11.png" alt="解説1" width="400"> <img src="https://github.com/carlos-paniagua/KB_1903/blob/master/%E8%A7%A3%E8%AA%AC2.png" alt="解説2" width="400">
+</p>
+
+
 
 ---
 
@@ -36,23 +41,26 @@ LINEで上記の課題を解決できるように作成しました
 入力内容からできるだけ一致する内容を探します
 ####  3. 特長3
 初対面の人との会話が弾むよう趣味が記載した電子名刺を作成
+パソコン,スマホに対応させました
 
 <p align="center">
-<img src="https://github.com/carlos-paniagua/KB_1903/blob/master/%E5%90%8D%E5%88%BA%E7%94%BB%E5%83%8F_tori.png" alt="名刺" width="500">
+<img src="https://github.com/carlos-paniagua/KB_1903/blob/master/%E5%90%8D%E5%88%BApc.png" alt="名刺pc" width="400">    <img src="https://github.com/carlos-paniagua/KB_1903/blob/master/%E5%90%8D%E5%88%BAsmart.png" alt="名刺smart" width="300">
 </p>
-
-
-
+<p>
+　　　　　　　　　　　　　　名刺パソコン版           　　　　　　　　　　　　　　　名刺スマホ版
+</p>
 
 ---
 
 ### 解決出来ること
-この製品を利用することによって最終的に解決できることについて記載をしてください。
 グループ上や現実での会話が促進され、より強固なチームワークの構築に一役買ってくれるはず！
 
 ---
 
 ### 今後の展望
+
+twitterと連携し高性能かつ正確なLINEBot,電子名刺をを作成する
+文脈解析の精度を上げそれぞれのユーザーの関心、興味などをユーザーの実態にそうように発展させる
 
 ---
 
@@ -63,12 +71,12 @@ LINEで上記の課題を解決できるように作成しました
 * Docomo 固有表現抽出API
 
 #### フレームワーク・ライブラリ・モジュール
-*
-
-#### デバイス
-* Raspberry Pi
+* requests
+* pickle
+* re
+* random
 
 ### 独自開発技術
 #### 2日間に開発した独自の機能・技術
-* 独自で開発したものの内容をこちらに記載してください
-* 特に力を入れた部分をファイルリンク、またはcommit_idを記載してください（任意）
+構文解析アルゴリズム、データベース、興味関心をもつ共通の話題を検出する統計学的アルゴリズム
+対話によりBotがtwitterと連携の実装

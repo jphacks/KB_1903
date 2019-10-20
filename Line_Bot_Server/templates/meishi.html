@@ -1,0 +1,81 @@
+<!-- icon_img    アイコン画像-->
+<!-- user_name   名前 -->
+<!-- hobby       趣味 -->
+<!-- twitter     以下、各SNSのアカウントページURL -->
+<!-- facebook -->
+<!-- google_plus -->
+<!-- tumblr -->
+<!-- youtube -->
+
+<!DOCTYPE html>
+<html>
+<head>
+ <html lang="ja">
+ <meta charset="UTF-8">
+ <title>MEISI</title>
+ <link rel="stylesheet" href="{{url_for('static',filename='stylesheet.css')}}">
+ <link rel="stylesheet" href="{{url_for('static',filename='sns_link.css')}}">
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+
+<body>
+
+<header>
+  <img src="{{url_for('static',filename='img/FMT.png')}}" height="90">
+  <!-- <h1>MEISHI</h1> -->
+</header>
+
+<main>
+
+  <div class="content">
+    <!-- <h4 class="text-40 animated">Name</h4>
+    <p class="text-30 animated">nnnnnnnnnnnnnn</p> -->
+    <div class="generate"></div>
+
+    <div class="row main-content-inner">
+      <div class="iroiro col-sm-3" id="faceIcon">
+        <img class="img-thumbnail" src="{{ icon_img }}" height="300" width="300">
+        <p>{{ user_name }}</p>
+      </div>
+
+      <div class="iroiro col-sm-8 offset-sm-1" id="profile">
+        <ul>
+          {% for i in hobby_list %}
+          <li><a href="">{{ i }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- <div class="iroiro col-sm-4 offset-sm-1">
+        <p>GORIRA</p>
+      </div> -->
+
+      <div class="iroiro col-sm-8 offset-sm-4" id="snsLink">
+        <ul class="follow-me">
+          <li><a href="{{ twitter }}"></a></li>
+          <li><a href="{{ facebook }}"></a></li>
+          <li><a href="{{ google_plus }}"></a></li>
+          <li><a href="{{ tumblr }}"></a></li>
+          <li><a href="{{ youtube }}"></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy;Copyright Advancing. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>
